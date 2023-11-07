@@ -1,0 +1,35 @@
+{
+  "NF": 2,
+  "NI": 16,
+  "NW": 2,
+  "NR": 16,
+  "NB": 2,
+
+  "INT_latency": 1,
+  "INT_RS": 4,
+
+  "LD_latency": 1,
+  "LD_RS": 2,
+  "ST_latency": 1,
+  "ST_RS": 2,
+
+  "FPadd_latency": 3,
+  "FPadd_RS": 3,
+
+  "FPmult_latency": 4,
+  "FPmult_RS": 3,
+
+  "FPdiv_latency": 8,
+  "FPdiv_RS": 2,
+
+  "BU_latency": 1,
+  "BU_RS": 2,
+
+  "ROB_latency": 1,
+  "ROB_RS": 16,
+
+  "btb_entries": 16,
+  "num_physical_regs": 32,
+
+  "cache_latency": 1
+}

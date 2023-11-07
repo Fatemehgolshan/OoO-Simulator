@@ -1,0 +1,56 @@
+
+% All the registers have the initial value of 0.
+% memory content in the form of address, value.
+0, 111
+8, 14
+16, 5
+24, 10
+32, 2
+40, 27
+48, 3
+56, 8
+64, 12
+72, 13
+80, 24
+88, 17
+96, 6
+104, 9
+112, 19
+120, 30
+128, 21
+136, 16
+144, 11
+152, 28
+160, 23
+168, 4
+176, 18
+184, 20
+192, 29
+200, 22
+
+addi R1, R0, 192
+addi R2, R0, 120
+fld F2, 64(R0)
+addi R3, R0, 8
+addi R4, R0, 136
+addi R5, R0, 152
+
+loop1:
+  fld F0, 0(R1)
+  fmul F0, F0, F2
+  fld F4, 0(R2)
+  fadd F0, F0, F4
+  fsd F0, 0(R2)
+  addi R1, R1, -8
+  addi R2, R2, -8
+  bne R1, R5, loop1
+
+loop2:
+  fld F0, 0(R3)
+  fmul F0, F0, F2
+  fld F4, 0(R4)
+  fadd F0, F0, F4
+  fsd F0, 0(R4)
+  addi R3, R3, 8
+  addi R4, R4, 8
+  bne R3, R5, loop2
