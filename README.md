@@ -61,7 +61,3 @@ The project is structured as follows:
 
 
 ```
-
-Replace `"https://github.com/yourusername/OoO-Simulator.git"` with the actual URL of your GitHub repository. This README provides an overview, features, usage instructions, project structure, and guidance for contributing to your project, along with licensing information.
-
-Remember to customize the README with specific details about your project and update the installation and usage instructions based on any project-specific requirements or dependencies.
