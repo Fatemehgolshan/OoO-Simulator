@@ -36,13 +36,13 @@ To run the OoO-Simulator, follow these steps:
    ```
 
 
-3. Configure the simulation by providing a configuration file and input code file as command-line arguments:
+2. Configure the simulation by providing a configuration file and input code file as command-line arguments:
 
    ```
    python processor.py path/to/config/file path/to/input/code
    ```
 
-4. The simulator will execute the code and evaluate CPU performance based on the specified parameters.
+3. The simulator will execute the code and evaluate CPU performance based on the specified parameters.
 
 ## Project Structure
 
